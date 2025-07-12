@@ -166,5 +166,25 @@ body {
   color: #c2185b;
   margin-top: 15px;
 }
+.back-button {
+  margin-top: 40px;
+}
+
+.back-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e91e63;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.back-button a:hover {
+  background-color: #c2185b;
+}
+
 
   
