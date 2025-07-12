@@ -1,0 +1,170 @@
+/* Google Fonts already imported in HTML */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #fff0f5;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #c2185b;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #880e4f;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .preview, .story, .list, .gallery {
+    margin-top: 40px;
+  }
+  
+  .poem-preview {
+    font-style: italic;
+    color: #4a148c;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list li {
+    margin: 15px 0;
+  }
+  
+  .list a {
+    color: #ad1457;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .list a:hover {
+    text-decoration: underline;
+  }
+  
+  /* .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  } */
+  .gallery {
+  column-count: 2;
+  column-gap: 15px;
+  padding: 10px;
+}
+
+.gallery a {
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+  /* Mobile styles */
+  @media screen and (max-width: 600px) {
+    .title {
+      font-size: 2.2rem;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+    }
+  
+    .nav a {
+      font-size: 0.95rem;
+    }
+  
+    .poem-preview {
+      font-size: 1rem;
+    }
+  
+    .list a {
+      font-size: 1.05rem;
+    }
+  
+    .gallery img {
+      max-width: 140px;
+    }
+  }
+  .us-photo {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.us-photo img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.us-photo img:hover {
+  transform: scale(1.02);
+}
+
+.caption {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.3rem;
+  color: #c2185b;
+  margin-top: 15px;
+}
+
+  
