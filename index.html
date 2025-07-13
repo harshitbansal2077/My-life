@@ -26,7 +26,28 @@
   <img src="images/heart-hands.jpeg" alt="Us Making a Heart" />
   <p class="caption">Two hands, one heart, forever yours.</p>
     </section>
-
   </div>
+  <audio id="bgMusic" loop>
+    <source src="music/romantic-tune.mp3" type="audio/mpeg">
+  <!-- Your browser does not support the audio element. -->
+  </audio>
+
+  <button id="playMusic" class="music-btn">🎵 Play Music</button>
+
+<script>
+  const music = document.getElementById('bgMusic');
+  const btn = document.getElementById('playMusic');
+
+  btn.addEventListener('click', () => {
+    if (music.paused) {
+      music.play();
+      btn.textContent = '⏸️ Pause';
+    } else {
+      music.pause();
+      btn.textContent = '🎵 Play Music';
+    }
+  });
+</script>
+
 </body>
 </html>

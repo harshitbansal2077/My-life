@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ffc1cc, #ffe6eb);
+      text-align: center;
+      color: #880e4f;
+    }
+
+    .heart {
+      font-size: 2.5rem;
+      animation: pulse 1.5s infinite;
+    }
+
+    .title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+      margin: 15px 0;
+    }
+
+    audio {
+      width: 100%;
+      max-width: 300px;
+      margin-top: 20px;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 480px) {
+      .heart {
+        font-size: 2rem;
+      }
+      .title {
+        font-size: 1.5rem;
+      }
+      body {
+        padding: 15px;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="heart">💖</div>
+  <h1 class="title">Romantic Tune Playing</h1>
+  <audio autoplay loop controls>
+    <source src="music/romantic-tune.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>

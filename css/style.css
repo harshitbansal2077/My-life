@@ -185,6 +185,26 @@ body {
 .back-button a:hover {
   background-color: #c2185b;
 }
+.music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #e91e63;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+
+.music-btn:hover {
+  background: #c2185b;
+}
+
 
 
   

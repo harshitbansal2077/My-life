@@ -25,5 +25,13 @@
   <div class="back-button">
     <center><a href="index.html">← Back to Home</a></center>
   </div>
+  <button id="playMusic" class="music-btn">🎵 Play Music</button>
+
+<script>
+  document.getElementById('playMusic').addEventListener('click', () => {
+    window.open('music-player.html', 'MusicPlayer', 'width=200,height=100');
+  });
+</script>
+
 </body>
 </html>
