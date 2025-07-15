@@ -43,9 +43,19 @@
   });
 </script>
 <script>
-  const correctPassword = "ellaboo";
-  const modal = document.getElementById('passwordModal');
-  const errorMsg = document.getElementById('errorMessage');
+  const encodedPassword = "ZWxsYWJvbw==";
+
+function checkPassword() {
+  const input = document.getElementById('galleryPassword').value;
+  const decodedPassword = atob(encodedPassword);
+
+  if (input === decodedPassword) {
+    modal.style.display = 'none';
+    document.getElementById('protectedContent').style.display = 'block';
+  } else {
+    errorMsg.textContent = "Incorrect password, try again!";
+  }
+}
 
   function checkPassword() {
   const input = document.getElementById('galleryPassword').value;
