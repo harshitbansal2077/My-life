@@ -15,7 +15,9 @@
     <p id="errorMessage"></p>
   </div>
   </div>
-
+    <h1>Welcome to the Gallery</h1>
+    <p>Here are some of our cherished moments together.</p>
+  <div id = "protectedContent" style ="display: none;">
   <div class="container">
     <h1 class="title">Your Beautiful Moments</h1>
     <div class="gallery">
@@ -30,6 +32,7 @@
       <a href="images/her9.jpeg" target="_blank"><img src="images/her9.jpeg" alt="My CUTUU"/></a>
       <a href="images/her10.jpeg" target="_blank"><img src="images/her10.jpeg" alt="My Princess"/></a>    
     </div>
+  </div>
   </div>
   <div class="back-button">
     <center><a href="index.html">← Back to Home</a></center>
@@ -47,13 +50,15 @@
   const errorMsg = document.getElementById('errorMessage');
 
   function checkPassword() {
-    const input = document.getElementById('galleryPassword').value;
-    if (input === correctPassword) {
-      modal.style.display = 'none';
-    } else {
-      errorMsg.textContent = "Incorrect password, try again!";
-    }
+  const input = document.getElementById('galleryPassword').value;
+  if (input === correctPassword) {
+    modal.style.display = 'none';
+    document.getElementById('protectedContent').style.display = 'block';
+  } else {
+    errorMsg.textContent = "Incorrect password, try again!";
   }
+}
+
 </script>
 
 
