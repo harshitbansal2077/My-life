@@ -44,30 +44,22 @@
 </script>
 <script>
   const encodedPassword = "ZWxsYWJvbw==";
-
-function checkPassword() {
-  const input = document.getElementById('galleryPassword').value;
-  const decodedPassword = atob(encodedPassword);
-
-  if (input === decodedPassword) {
-    modal.style.display = 'none';
-    document.getElementById('protectedContent').style.display = 'block';
-  } else {
-    errorMsg.textContent = "Incorrect password, try again!";
-  }
-}
+  const modal = document.getElementById('passwordModal');
+  const errorMsg = document.getElementById('errorMessage');
 
   function checkPassword() {
-  const input = document.getElementById('galleryPassword').value;
-  if (input === correctPassword) {
-    modal.style.display = 'none';
-    document.getElementById('protectedContent').style.display = 'block';
-  } else {
-    errorMsg.textContent = "Incorrect password, try again!";
-  }
-}
+    const input = document.getElementById('galleryPassword').value;
+    const decodedPassword = atob(encodedPassword);
 
+    if (input === decodedPassword) {
+      modal.style.display = 'none';
+      document.getElementById('protectedContent').style.display = 'block';
+    } else {
+      errorMsg.textContent = "Incorrect password, try again!";
+    }
+  }
 </script>
+
 
 
 </body>
