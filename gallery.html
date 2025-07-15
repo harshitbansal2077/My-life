@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
+  <div id="passwordModal" class="modal">
+  <div class="modal-content">
+    <h2>🔐 Enter the Secret Code</h2>
+    <input type="password" id="galleryPassword" placeholder="Enter Password"/>
+    <button onclick="checkPassword()">Unlock</button>
+    <p id="errorMessage"></p>
+  </div>
+  </div>
+
   <div class="container">
     <h1 class="title">Your Beautiful Moments</h1>
     <div class="gallery">
@@ -32,6 +41,21 @@
     window.open('music-player.html', 'MusicPlayer', 'width=200,height=100');
   });
 </script>
+<script>
+  const correctPassword = "mySweetLove"; // Change this password
+  const modal = document.getElementById('passwordModal');
+  const errorMsg = document.getElementById('errorMessage');
+
+  function checkPassword() {
+    const input = document.getElementById('galleryPassword').value;
+    if (input === correctPassword) {
+      modal.style.display = 'none';
+    } else {
+      errorMsg.textContent = "Incorrect password, try again!";
+    }
+  }
+</script>
+
 
 </body>
 </html>
